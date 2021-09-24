@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    top: 0;
+    margin: 0;
+}
+header{
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+    background: url(./images/desktop/image-hero.jpg) no-repeat center;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.logo{
+    font-size: 35px;
+    padding: 0 160px;
+    line-height: 100px;
+}
+.links{
+    float: right;
+    margin-right: 100px;
+    z-index: 1;
+}
+nav{
+    left: 0;
+}
+nav li{
+    display: inline-block;
+    line-height: 80px;
+}
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: white;
+}
+
+a:hover{
+    border: 3px solid white;
+    transition: .5s;
+}
+#icon{
+    font-size: 20px;
+    line-height: 70px;
+    float: right;
+    cursor: pointer;
+    margin-right: 60px;
+    display: none;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+.tagline{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 450px;;
+    max-height: 400px;
+    font-size: 70px;
+    border: 2px white solid;
+    padding: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow:visible;
+    z-index: -2;
+}
+
+article{
+    margin: 750px 60px 50px 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+article img{
+    width: 90%;
+    
+}
+article .heading{
+    background: white;
+    padding: 20px;
+    width: 400px;
+}
+article h1{
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+article p{
+    font-size: 16px;
+    font-family: 'Alata', sans-serif;
+}
+section{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.section-header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.image-container{
+    margin: 30px 100px 0 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto auto;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+section .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.image:hover{
+    transform: scale(1.1);
+}
+section .name{
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    font-size: 25px;
+    color: white;
+    overflow: auto;
+}
+section p{
+    font-size: 25px;
+    padding: 6px 15px;
+    cursor: pointer;
+    border: 2px black solid;
+}
+section p:hover{
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+}
+section h1{
+    font-size: 35px;
+}
+
+
+footer{
+    margin-right: 70px;
+}
+.footer-container{
+    margin: 150px 60px 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.footer-container h1{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.footer-container li, .item4{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.footer-container li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+.link{
+    display: inline-block;
+}
+.icons a{
+    padding: 5px;
+    border: none;
+}
+.icons a:hover, .item3 a:hover {
+    opacity: 0.3;
+}
+@media only screen and (max-width: 1080px){
+    #icon{
+        display: block;
+    }
+    .links{
+        position: fixed;
+        top: 8%;
+        left: 0;
+        height: 500px;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+        padding: 0;
+    }
+    #mobilemenu{
+        display: none;
+        background:black;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 500px;
+    }
+    .logo{
+        padding: 0 50px;
+        line-height: 80px;
+    }
+    nav li{
+        display: block;
+    }
+    .tagline{
+        font-size: 70px;
+        width: 450px
+    }
+    article{
+        flex-direction: column;
+    }
+    article img{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    article .heading{
+        align-items: center;
+        width: 80%;
+    }
+    article h1{
+        font-size: 26px;
+    }
+    article p{
+        font-size: 18px;
+    }
+    .w1{
+        grid-column: span 2;
+    } 
+    .image{
+        height: 240px;
+        min-width: 400px;
+    }
+    .image-container{
+        margin-top: 0;
+    }
+    .footer-container li{
+        display: block;
+        margin-right: 40px;
+    }
+    .footer-container icons{
+        margin-right: 100px;
+    }
+    .item1{grid-area: name;}
+    .item2{grid-area: icons;}
+    .item3{grid-area: nav;}
+    .item4{grid-area: rights;}
+    .footer-container{
+        grid-template-areas: 'name name'
+            'nav nav' 'icons icons' 'rights rights';
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    .w1{
+        grid-column: span 4;
+    } 
+    .tagline{
+        left: 10%;
+        width: 350px;
+        font-size: 60px;
+    }
+    .section-header{
+        display: inline;
+        text-align: center;
+    }
+    section p{
+        position: relative;
+        top: 2080px;
+        justify-content: center;
+        margin: 0 120px;
+    }
+
+    article .heading{
+        font-size: 14px;
+        width: 100%;
+    }
+    article img{
+        width: 450px;
+    }
+    article h1{
+        font-size: 23px;
+    }
+    article p{
+        font-size: 16px;
+    }
+    .image{
+        height: 240px;
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .logo{
+        font-size: 30px;
+    }
+    .tagline{
+        width: 280px;
+        font-size: 45px;
+    }
+    article .heading{
+        font-size: 12px;
+        width: 150%;
+    }
+    article img{
+        width: 300px;
+    }
+}
+
+.attribution { 
+    font-size: 16px; 
+    text-align: center; 
+    margin-bottom: 30px;
+    font-family: 'Alata', sans-serif;
+    
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    border: none;
+}

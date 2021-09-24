@@ -1,25 +1,31 @@
-# loopstudio.github.io
-# Title Of the project - Order summary card solution
+# Title Of the project - LoopStudios Landing Page
 
 ## Overview
+~ This is Loopstudios landing page is an responsive web design, which contains details and some photographs of the owner.
 
-~ This is an order summary card containing bill amount and an option for payment and canceling order.
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
-~ I started building summary card first later i placed it in the center of the screen. In this building card is the real task to do. I created this by using "flex". The Order summary card contains about what you are paying for. Along with that i added payment details like bill amount. Finally, i added two buttons using flex in column direction.
+~ I started building this responsive site by using CSS GRID, FLEXBOX and SEMANTIC HTML MARKUP. Firstly, i build a big screen resolution design later i converted into responsive, which is suitable for every screen resolution.
+
+You can see many css properties i used in the code. I Build the page by dividing it into parts, started with creating nav bar, later it has article, section and footer semantics.
+
+Later i add some effects like HOVER and somme transitions.
+
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flex
+- Flexbox
+- CSS Grid
 
-### What I learned
-
-I got clear idea about how FLEX works. I understand how to import font, styling the button.
 
 ## Author
 
-- UDAY KIRAN PULASETTI.
-
+-UDAY KIRAN PULASETTI.
